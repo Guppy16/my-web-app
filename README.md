@@ -1,3 +1,10 @@
+
+
+## Acknowledgements
+- Got domain from freenom: https://www.freenom.com/
+- Hosting on firebase
+- Development using react js: https://reactjs.org/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
