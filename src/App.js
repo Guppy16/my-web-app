@@ -6,6 +6,7 @@ export default function App() {
   return (
     <React.Fragment>
       <LandingPage />
+      <Footer />
     </React.Fragment>
   );
 }
