@@ -1,9 +1,15 @@
-
+## TO DO
+- Setup firebase and github to deploy after building project
 
 ## Acknowledgements
-- Got domain from freenom: https://www.freenom.com/
+- Got domain from [freenom](https://www.freenom.com/)
 - Hosting on firebase
-- Development using react js: https://reactjs.org/
+    - NOTE (to self): when setting adding record to dns for site verification, leave the name blank
+- Development using [react js](https://reactjs.org/)
+- repl.guppy16.ml is hosted using [repl.it](https://repl.it)
+
+## Resources
+- [Material UI Icon selector](https://material-ui.com/components/material-icons/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
