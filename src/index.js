@@ -2,13 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./assets/index.css";
 import App from "./App";
-import Footer from "./components/StickyFooter.js";
+import { createBrowserHistory } from "history";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
+
+var hist = createBrowserHistory();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <Footer />
+    <Router history={hist}>
+      <Switch>
+        <Route path="/" component={App} exact={true} />
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
