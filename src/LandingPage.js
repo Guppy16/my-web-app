@@ -58,6 +58,13 @@ const cards = [
     desc:
       "Checkout this repo on GitHub to setup a wifi Hotspot using a Raspberry Pi",
   },
+  {
+    imgURL: "https://source.unsplash.com/random",
+    imgTitle: "https://source.unsplash.com/random",
+    link: "https://source.unsplash.com/random",
+    title: "Meh 3",
+    desc: "Bruh...2?",
+  },
 ];
 
 export default function Album() {

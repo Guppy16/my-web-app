@@ -17,7 +17,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary">
       {"Copyright © "}
-      <Link color="inherit" href="https://me.guppy16.ml/">
+      <Link color="inherit" href="https://github.com/Guppy16/my-web-app">
         Guppy16
       </Link>{" "}
       {new Date().getFullYear()}
@@ -30,15 +30,12 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
+    backgroundColor: theme.palette.background.paper
   },
   footer: {
-    padding: theme.spacing(3, 1),
+    padding: theme.spacing(3, 0),
     marginTop: "auto",
     textAlign: "center",
-    backgroundColor:
-      theme.palette.type === "light"
-        ? theme.palette.grey[200]
-        : theme.palette.grey[800],
   },
   sponsors: {
     padding: theme.spacing(1),
@@ -56,15 +53,15 @@ export default function StickyFooter() {
       <footer className={classes.footer}>
         <Container maxWidth="sm">
           <Container className={classes.sponsors}>
-            <Container className={classes.sponsor}>
-              <Typography variant="body2">Powered by React</Typography>
+            <Container>
+              <Typography variant="caption">Powered by React</Typography>
               <img src={logo} className="App-logo" alt="logo" title="ReactJS" href="https://reactjs.org/"/>
             </Container>
-            <Container className={classes.sponsor}>
-              <Typography variant="body2">Hosted on Firebase</Typography>
+            <Container>
+              <Typography variant="caption">Hosted on Firebase</Typography>
             </Container>
-            <Container className={classes.sponsor}>
-              <Typography variant="body2">Domain from Freenom</Typography>
+            <Container>
+              <Typography variant="caption">Domain from Freenom</Typography>
               <IconButton href="https://www.freenom.com/" title="Freenom">
                 <Dns />
               </IconButton>
