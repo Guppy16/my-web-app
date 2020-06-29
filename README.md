@@ -1,5 +1,5 @@
 ## TO DO
-- Setup firebase and github to deploy after building project
+- Setup firebase and github to deploy after commiting project
 
 ## Acknowledgements
 - Got domain from [freenom](https://www.freenom.com/)
