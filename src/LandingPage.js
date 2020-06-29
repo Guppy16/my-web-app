@@ -11,7 +11,6 @@ import {
   Typography,
   Container,
 } from "@material-ui/core";
-import { SettingsRemote } from "@material-ui/icons";
 import Social from "./components/SocialMediaBanner.js";
 
 const useStyles = makeStyles((theme) => ({
