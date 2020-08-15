@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./assets/index.css";
 import App from "./App";
+import FormPage from "./FormPage.js";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
@@ -13,6 +14,9 @@ ReactDOM.render(
     <Router history={hist}>
       <Switch>
         <Route path="/" component={App} exact={true} />
+      </Switch>
+      <Switch>
+        <Route path="/Badminton" component={FormPage} exact={true} />
       </Switch>
     </Router>
   </React.StrictMode>,
