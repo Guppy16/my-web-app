@@ -46,7 +46,7 @@ const cards = [
     imgURL: "https://source.unsplash.com/random",
     imgTitle: "https://source.unsplash.com/random",
     link: "https://source.unsplash.com/random",
-    title: "Meh 1",
+    title: "Food",
     desc: "Bruh",
   },
   {

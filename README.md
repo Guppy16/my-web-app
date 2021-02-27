@@ -7,6 +7,7 @@
 ## TO DO
 - Add content to repl.guppy16.ml
 - Add more info about me
+- For safety, only deploy from PR to live branch
 
 ## Planned pages
 - /Recipes

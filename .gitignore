@@ -1,5 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Hidden files in assets
+/src/assets/.*
+# firebase authentication. May not actually need to gitignore this
+guppy*
+
 # dependencies
 /node_modules
 /.pnp
