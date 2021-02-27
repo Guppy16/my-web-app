@@ -23,6 +23,8 @@
   - Links to articles that I like. Maybe do some LDA/AI to find what I like
 - /Memes
   - Ideas for e.g. Memes/Vine/TikTok type stuff
+- /InterviewQues or /NoiceQuestions
+  - Question bank of interview/ problem solving/noice style questions
 
 ## Acknowledgements
 - Domain from [freenom](https://www.freenom.com/)
