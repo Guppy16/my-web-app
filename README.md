@@ -21,6 +21,8 @@
   - Guitar riffs
 - /News
   - Links to articles that I like. Maybe do some LDA/AI to find what I like
+- /Memes
+  - Ideas for e.g. Memes/Vine/TikTok type stuff
 
 ## Acknowledgements
 - Domain from [freenom](https://www.freenom.com/)
