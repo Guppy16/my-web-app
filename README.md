@@ -8,6 +8,20 @@
 - Add content to repl.guppy16.ml
 - Add more info about me
 
+## Planned pages
+- /Recipes
+  - List/"hub"/"cards" of recipes
+  - Subpage for each food item
+  - Clear and easy to read (e.g. no ads, a few pics)
+- /Projects
+  - Drone
+  - Left hand writing
+- /Music
+  - Maybe some ML stuff for fav music
+  - Guitar riffs
+- /News
+  - Links to articles that I like. Maybe do some LDA/AI to find what I like
+
 ## Acknowledgements
 - Domain from [freenom](https://www.freenom.com/)
 - Firebase hosting
