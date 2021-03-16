@@ -5,8 +5,8 @@
 - NOTE: Still under construction
 
 ## TO DO
-- Add content to repl.guppy16.ml
-- Add more info about me
+- fix img size on cards in landing page AND add images
+- Add recipes in food page
 - For safety, only deploy from PR to live branch
 
 ## Planned pages
@@ -53,3 +53,4 @@
 - `npm test` See [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more info
 - `npm run build`
 - `npm run eject`
+- `firebase login:ci` to get firebase secret token. See [github action for firebase](https://github.com/marketplace/actions/github-action-for-firebase)

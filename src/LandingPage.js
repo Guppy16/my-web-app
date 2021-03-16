@@ -33,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
   },
   cardMedia: {
+    height: 0,
     paddingTop: "56.25%", // 16:9
-    height: 10,
   },
   cardContent: {
     flexGrow: 1,
@@ -44,26 +44,25 @@ const useStyles = makeStyles((theme) => ({
 const cards = [
   {
     imgURL: "https://source.unsplash.com/random",
-    imgTitle: "https://source.unsplash.com/random",
-    link: "https://source.unsplash.com/random",
+    imgTitle: "Food for thought",
+    link: "/Food",
     title: "Food",
-    desc: "Bruh",
+    desc: "Recipes of Disaster",
   },
   {
     imgURL:
-      "https://fonts.gstatic.com/s/i/materialicons/settings_remote/v6/24px.svg?download=true",
-    imgTitle: "pi",
+      "https://fonts.gstatic.com/s/i/materialicons/extension/v6/24px.svg?download=true",
+    imgTitle: "Build ur imagination",
     link: "https://github.com/Guppy16/rpi-access-point-no-bridge",
-    title: "RPi Hotspot",
-    desc:
-      "Checkout this repo on GitHub to setup a wifi Hotspot using a Raspberry Pi",
+    title: "Projects",
+    desc: "Cool things to do in life",
   },
   {
     imgURL: "https://source.unsplash.com/random",
     imgTitle: "https://source.unsplash.com/random",
     link: "https://source.unsplash.com/random",
-    title: "Meh 3",
-    desc: "Bruh...2?",
+    title: "Prep",
+    desc: "Problem solving questions",
   },
 ];
 
