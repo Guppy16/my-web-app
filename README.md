@@ -5,9 +5,8 @@
 - NOTE: Still under construction
 
 ## TO DO
-- Turn Hero Unit into a reusable header component
-- fix img size on cards in landing page AND add images
 - Add recipes in food page
+- fix img size on cards in landing page AND add images
 - For safety, only deploy from PR to live branch
 
 ## Planned pages
