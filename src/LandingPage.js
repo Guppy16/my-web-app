@@ -12,13 +12,11 @@ import {
   Container,
 } from "@material-ui/core";
 import Social from "./components/SocialMediaBanner.js";
+import SimpleHeroUnit from "./components/SimpleHeroUnit.js";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-  },
-  heroContent: {
-    padding: theme.spacing(8, 0, 6),
   },
   heroButtons: {
     marginTop: theme.spacing(4),
@@ -73,52 +71,37 @@ export default function Album() {
     <React.Fragment>
       <CssBaseline />
       <main className={classes.root}>
-        {/* Hero unit */}
-        <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            <Typography
-              component="h1"
-              variant="h2"
-              align="center"
-              color="textPrimary"
-              gutterBottom
-            >
-              Akash Gupta
-            </Typography>
-            <Typography
-              variant="h5"
-              align="center"
-              color="textSecondary"
-              paragraph
-            >
-              Why are you even here...smh
-            </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button
-                    variant="contained"
-                    color="secondary"
-                    href="https://knowdemics.com/"
-                  >
-                    Don't Click Me
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button
-                    variant="outlined"
-                    color="primary"
-                    href="https://repl.guppy16.ml"
-                  >
-                    ...
-                  </Button>
-                </Grid>
+        <SimpleHeroUnit
+          title="Akash Gupta"
+          subtitle="Why are you even here...smh"
+        />
+        <Container maxWidth="sm">
+          <div className={classes.heroButtons}>
+            <Grid container spacing={2} justify="center">
+              <Grid item>
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  href="https://knowdemics.com/"
+                >
+                  Don't Click Me
+                </Button>
               </Grid>
-            </div>
-          </Container>
-        </div>
-        {/* End hero unit */}
+              <Grid item>
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  href="https://repl.guppy16.ml"
+                >
+                  ...
+                </Button>
+              </Grid>
+            </Grid>
+          </div>
+        </Container>
+        {/* Social Media stuff */}
         <Social />
+        {/* Cards for other sites */}
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>
             {cards.map((card, i) => (

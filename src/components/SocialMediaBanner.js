@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { IconButton } from "@material-ui/core";
 import { GitHub, LinkedIn, School } from "@material-ui/icons";
+import { blue, red } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
     textAlign: "center",
+    backgroundColor: blue[50],
   },
 }));
 
