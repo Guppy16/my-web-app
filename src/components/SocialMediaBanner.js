@@ -6,7 +6,7 @@ import { blue, red } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: theme.spacing(3, 2),
+    padding: theme.spacing(2, 2),
     textAlign: "center",
   },
   button: {

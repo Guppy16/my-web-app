@@ -4,7 +4,7 @@ import { Container, CssBaseline, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
-    padding: theme.spacing(8, 0, 6),
+    padding: theme.spacing(8, 0, 0),
     backgroundColor: theme.palette.background.paper,
   },
 }));

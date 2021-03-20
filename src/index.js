@@ -4,6 +4,7 @@ import "./assets/index.css";
 import App from "./App";
 import FormPage from "./FormPage.js";
 import FoodPage from "./pages/food/FoodPage.js"
+import BooksPage from "./pages/books/BooksPage.js"
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
@@ -21,6 +22,9 @@ ReactDOM.render(
       </Switch>
       <Switch>
         <Route path="/Food" component={FoodPage} exact={true} />
+      </Switch>
+      <Switch>
+        <Route path="/Books" component={BooksPage} exact={true} />
       </Switch>
     </Router>
   </React.StrictMode>,

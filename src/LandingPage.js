@@ -62,6 +62,13 @@ const cards = [
     title: "Prep",
     desc: "Problem solving questions",
   },
+  {
+    imgURL: "https://source.unsplash.com/random",
+    imgTitle: "https://source.unsplash.com/random",
+    link: "/Books",
+    title: "Books",
+    desc: "The very few list of books I've completed",
+  }
 ];
 
 export default function Album() {
@@ -73,9 +80,9 @@ export default function Album() {
       <main className={classes.root}>
         <SimpleHeroUnit
           title="Akash Gupta"
-          subtitle="Why are you even here...smh"
+          subtitle="Insert cool statement"
         />
-        <Container maxWidth="sm">
+        {/* <Container maxWidth="sm">
           <div className={classes.heroButtons}>
             <Grid container spacing={2} justify="center">
               <Grid item>
@@ -98,7 +105,7 @@ export default function Album() {
               </Grid>
             </Grid>
           </div>
-        </Container>
+        </Container> */}
         {/* Social Media stuff */}
         <Social />
         {/* Cards for other sites */}
