@@ -15,7 +15,14 @@ import {
   CardHeader,
   Collapse,
 } from "@material-ui/core";
-import { Cake, ExpandMore, List, FormatListNumbered, Autorenew } from "@material-ui/icons";
+import {
+  Cake,
+  ExpandMore,
+  List,
+  FormatListNumbered,
+  Autorenew,
+  Link,
+} from "@material-ui/icons";
 import { blue, red } from "@material-ui/core/colors";
 import Footer from "../../components/StickyFooter.js";
 import food_items from "./food_items.js";
@@ -45,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   },
   expand: {
     transform: "rotate(0deg)",
-    marginRight: "auto",
+    marginLeft: "auto",
     transition: theme.transitions.create("transform", {
       duration: theme.transitions.duration.shortest,
     }),
@@ -98,6 +105,9 @@ export default function FoodPage() {
                       title={food.name}
                     />
                     <CardActions disableSpacing>
+                      <IconButton href={food.link}>
+                        <Link />
+                      </IconButton>
                       <IconButton
                         // Select class based on state of expanded
                         className={clsx(classes.expand, {
@@ -126,7 +136,9 @@ export default function FoodPage() {
                         <Typography variant="h5">Instructions</Typography>
                         <br />
                         {food.instructions.map((instruction, idx) => (
-                          <Typography>{instruction}</Typography>
+                          <Typography variant="body1" paragraph>
+                            {idx + 1}. {instruction}
+                          </Typography>
                         ))}
                       </CardContent>
                     </Collapse>

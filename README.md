@@ -16,6 +16,7 @@
   - List/"hub"/"cards" of recipes
   - Subpage for each food item
   - Clear and easy to read (e.g. no ads, a few pics)
+  - Img shd be a reference to shokugeki (maybe learn to draw?)
 - /Books
   - List of books and authors, date finished
   - My review (tbh is this worth?)
