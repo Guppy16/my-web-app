@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(8),
   },
   card: {
+    margin: "auto",
     height: "100%",
     display: "flex",
     maxWidth: 345,
@@ -74,8 +75,8 @@ export default function BooksPage() {
       <CssBaseline>
         <main className={classes.root}>
           <SimpleHeroUnit
-            title="Recipes of Disaster"
-            subtitle="Insert some anime cooking reference"
+            title="Books"
+            subtitle="The very few list of books I've completed"
           />
           <Container className={classes.cardGrid} maxWidth="md">
             <Grid container spacing={4}>

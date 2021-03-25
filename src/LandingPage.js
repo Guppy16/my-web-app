@@ -68,7 +68,14 @@ const cards = [
     link: "/Books",
     title: "Books",
     desc: "The very few list of books I've completed",
-  }
+  },
+  {
+    imgURL: "https://source.unsplash.com/random",
+    imgTitle: "Mirror Magic",
+    link: "/MagicMirror",
+    title: "Magic Mirror",
+    desc: "The page I'd put on my magic mirror",
+  },
 ];
 
 export default function Album() {
@@ -78,10 +85,7 @@ export default function Album() {
     <React.Fragment>
       <CssBaseline />
       <main className={classes.root}>
-        <SimpleHeroUnit
-          title="Akash Gupta"
-          subtitle="Insert cool statement"
-        />
+        <SimpleHeroUnit title="Akash Gupta" subtitle="Insert cool statement" />
         {/* <Container maxWidth="sm">
           <div className={classes.heroButtons}>
             <Grid container spacing={2} justify="center">
