@@ -3,8 +3,9 @@ import ReactDOM from "react-dom";
 import "./assets/index.css";
 import App from "./App";
 import FormPage from "./FormPage.js";
-import FoodPage from "./pages/food/FoodPage.js"
-import BooksPage from "./pages/books/BooksPage.js"
+import FoodPage from "./pages/food/FoodPage.js";
+import BooksPage from "./pages/books/BooksPage.js";
+import MagicMirrorPage from "./pages/magicmirror/MagicMirrorPage.js";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
@@ -25,6 +26,9 @@ ReactDOM.render(
       </Switch>
       <Switch>
         <Route path="/Books" component={BooksPage} exact={true} />
+      </Switch>
+      <Switch>
+        <Route path="/MagicMirror" component={MagicMirrorPage} exact={true} />
       </Switch>
     </Router>
   </React.StrictMode>,

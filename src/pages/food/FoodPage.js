@@ -15,7 +15,7 @@ import {
   CardHeader,
   Collapse,
 } from "@material-ui/core";
-import { Cake, ExpandMore, List, FormatListNumbered } from "@material-ui/icons";
+import { Cake, ExpandMore, List, FormatListNumbered, Autorenew } from "@material-ui/icons";
 import { blue, red } from "@material-ui/core/colors";
 import Footer from "../../components/StickyFooter.js";
 import food_items from "./food_items.js";
@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(8),
   },
   card: {
+    margin: "auto",
     height: "100%",
     display: "flex",
     maxWidth: 345,
