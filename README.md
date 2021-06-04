@@ -36,6 +36,8 @@
   - Ideas for e.g. Memes/Vine/TikTok type stuff
 - /InterviewQues or /NoiceQuestions
   - Question bank of interview/ problem solving/noice style questions
+- /PDF
+  - Tool to merge, reorder pages and download pdf
 - /OctoPi
   - Live view of current 3D print
   - Timelapses of noice prints
