@@ -1,6 +1,6 @@
 const food_items = [
   {
-    name: "Chocolate Coffec Cake",
+    name: "Chocolate Coffee Cake",
     type: "cake",
     date: "17/03/2021",
     link: "https://cafedelites.com/best-fudgy-chocolate-cake/#wprm-recipe-container-40194", // Change this to url of website

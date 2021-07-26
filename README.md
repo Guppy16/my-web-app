@@ -4,25 +4,30 @@
 - Also checkout [repl.guppy16.ml](https://repl.guppy16.ml/) which is hosted using repl
 - NOTE: Still under construction
 
-## TO DO
-- Add recipes in food page
-- Add books in book page
-- Fix other boxes flex gorwing when down exand icon clicked
+## 🔸 TO DO
+- Add dark mode
+- Add recipes, books
 - fix img size on cards in landing page AND add images
 - For safety, only deploy from PR to live branch
 
+
+
 ## Planned pages
 - /Recipes
-  - List/"hub"/"cards" of recipes
-  - Subpage for each food item
-  - Clear and easy to read (e.g. no ads, a few pics)
+  - [x] cards of recipes
+  - [x] collapse for each food item
+  - [x] Clear and easy to read (e.g. no ads, a few pics)
   - Img shd be a reference to shokugeki (maybe learn to draw?)
 - /Books
-  - List of books and authors, date finished
+  - [x] List of books and authors, date finished
   - My review (tbh is this worth?)
   - One line description of the book
   - Drop down: Things that I learnt
   - Trolley-icon: amazon link to book
+- /InterviewQues or /NoiceQuestions
+  - Question bank of interview/ problem solving/noice style questions
+- /MagicMirror
+  - Webpage I would show if I had a magic mirror
 - /Projects
   - Drone
   - Left hand writing
@@ -34,13 +39,9 @@
   - Links to articles that I like. Maybe do some LDA/AI to find what I like
 - /Memes
   - Ideas for e.g. Memes/Vine/TikTok type stuff
-- /InterviewQues or /NoiceQuestions
-  - Question bank of interview/ problem solving/noice style questions
 - /OctoPi
   - Live view of current 3D print
   - Timelapses of noice prints
-- /MagicMirror
-  - Webpage I would show if I had a magic mirror
 - repl.guppy.ml
   - Showcase smth cool related to a repl project?
 - Separate page written on python

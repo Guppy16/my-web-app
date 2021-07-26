@@ -38,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     margin: "auto",
-    height: "100%",
+    // height: "100%",
+    maxHeight: 360,
     display: "flex",
     maxWidth: 345,
     flexDirection: "column",
@@ -49,16 +50,18 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContent: {
     flexGrow: 1,
+    maxHeight: "25%",
+    overflow: 'auto',
   },
   expand: {
-    transform: "rotate(0deg)",
+    transform: "rotate(180deg)",
     marginLeft: "auto",
     transition: theme.transitions.create("transform", {
       duration: theme.transitions.duration.shortest,
     }),
   },
   expandOpen: {
-    transform: "rotate(180deg)",
+    transform: "rotate(0deg)",
   },
   avatar: {
     backgroundColor: red[500],
@@ -71,10 +74,13 @@ const foodTypeIcon = {
 
 export default function FoodPage() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
+  const [expanded, setExpanded] = React.useState(food_items.map((i) => false));
+
+  const handleExpandClick = (index) => {
+    setExpanded((expanded) =>
+      expanded.map((item, idx) => (idx === index ? !item : item))
+    );
   };
 
   return (
@@ -89,7 +95,7 @@ export default function FoodPage() {
             <Grid container spacing={4}>
               {food_items.map((food, i) => (
                 <Grid item key={i} xs={12} sm={6} md={4}>
-                  <Card className={classes.card}>
+                  <Card key={i} className={classes.card}>
                     <CardHeader
                       avatar={
                         <Avatar aria-label="recipe" className={classes.avatar}>
@@ -99,29 +105,16 @@ export default function FoodPage() {
                       title={food.name}
                       subheader={food.date}
                     />
-                    <CardMedia
-                      className={classes.cardMedia}
-                      // image={food.img} // img ~ "/static/images/cake.jpg"
-                      title={food.name}
-                    />
-                    <CardActions disableSpacing>
-                      <IconButton href={food.link}>
-                        <Link />
-                      </IconButton>
-                      <IconButton
-                        // Select class based on state of expanded
-                        className={clsx(classes.expand, {
-                          [classes.expandOpen]: expanded,
-                        })}
-                        onClick={handleExpandClick}
-                        aria-expanded={expanded}
-                        aria-label="show more"
-                      >
-                        <ExpandMore />
-                      </IconButton>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                      <CardContent>
+                    <Collapse in={!expanded[i]} timeout="auto" unmountOnExit>
+                      <CardMedia
+                        className={classes.cardMedia}
+                        // image={food.img} // img ~ "/static/images/cake.jpg"
+                        title={food.name}
+                      />
+                    </Collapse>
+
+                    <Collapse in={expanded[i]} timeout="auto" unmountOnExit>
+                      <CardContent className={classes.cardContent}>
                         <Typography variant="h5">Ingredients</Typography>
                         <br />
                         {food.ingredients.map(
@@ -142,6 +135,23 @@ export default function FoodPage() {
                         ))}
                       </CardContent>
                     </Collapse>
+
+                    <CardActions disableSpacing>
+                      <IconButton href={food.link}>
+                        <Link />
+                      </IconButton>
+                      <IconButton
+                        // Select class based on state of expanded
+                        className={clsx(classes.expand, {
+                          [classes.expandOpen]: expanded[i],
+                        })}
+                        onClick={() => handleExpandClick(i)}
+                        // aria-expanded={expanded[i]}
+                        aria-label="show more"
+                      >
+                        <ExpandMore />
+                      </IconButton>
+                    </CardActions>
                   </Card>
                 </Grid>
               ))}
