@@ -39,6 +39,8 @@
   - Links to articles that I like. Maybe do some LDA/AI to find what I like
 - /Memes
   - Ideas for e.g. Memes/Vine/TikTok type stuff
+- /PDF
+  - Tool to merge, reorder pages and download pdf
 - /OctoPi
   - Live view of current 3D print
   - Timelapses of noice prints
