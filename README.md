@@ -7,7 +7,8 @@
 ## 🔸 TO DO
 - Add dark mode
 - Add recipes, books
-- fix img size on cards in landing page AND add images
+- Work on MagicMirror
+- Work on interview ques page
 - For safety, only deploy from PR to live branch
 
 
@@ -20,8 +21,8 @@
   - Img shd be a reference to shokugeki (maybe learn to draw?)
 - /Books
   - [x] List of books and authors, date finished
-  - My review (tbh is this worth?)
-  - One line description of the book
+  - [x] My review (tbh is this worth?)
+  - [x] One line description of the book
   - Drop down: Things that I learnt
   - Trolley-icon: amazon link to book
 - /InterviewQues or /NoiceQuestions
@@ -31,7 +32,6 @@
 - /Projects
   - Drone
   - Left hand writing
-  - Lockdown exercise game
 - /Music
   - Maybe some ML stuff for fav music
   - Guitar riffs
@@ -42,6 +42,7 @@
 - /PDF
   - Tool to merge, reorder pages and download pdf
 - /OctoPi
+  - Pull video from database and view
   - Live view of current 3D print
   - Timelapses of noice prints
 - repl.guppy.ml

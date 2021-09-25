@@ -31,15 +31,15 @@ export default function SocialMediaBanner() {
         </IconButton>
         <IconButton
           className={classes.button}
-          href="https://www.linkedin.com/in/akash-gupta-462650134/"
+          href="https://www.linkedin.com/in/akash--gupta/"
           title="InLinked"
         >
           <LinkedIn fontSize="large" />
         </IconButton>
         <IconButton
           className={classes.button}
-          href="https://www.cam.ac.uk/"
-          title="University of Cambridge"
+          href="https://www.undergraduate.study.cam.ac.uk/courses/engineering"
+          title="Cambridge of University"
         >
           <School fontSize="large" />
         </IconButton>

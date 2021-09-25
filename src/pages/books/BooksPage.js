@@ -34,25 +34,18 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     display: "flex",
     maxWidth: 345,
+    maxHeight: "50em",
     flexDirection: "column",
   },
   cardMedia: {
-    paddingTop: "56.25%", // 16:9
-    height: 10,
+    width: "70%",
+    // alignSelf: "center"
+    padding: "16px"
   },
   cardContent: {
     flexGrow: 1,
     height: "100%",
-  },
-  expand: {
-    transform: "rotate(0deg)",
-    marginRight: "auto",
-    transition: theme.transitions.create("transform", {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: "rotate(180deg)",
+    // paddingTop: "5px"
   },
   avatar: {
     backgroundColor: red[500],
@@ -85,40 +78,22 @@ export default function BooksPage() {
                 <Grid item key={i} xs={12} sm={6} md={4}>
                   <Card className={classes.card}>
                     <CardHeader
-                      avatar={
-                        <Avatar aria-label="recipe" className={classes.avatar}>
-                          B
-                        </Avatar>
-                      }
                       title={book.name}
                       subheader={book["date-finished"]}
                     />
                     <CardMedia
                       className={classes.cardMedia}
                       // image={food.img} // img ~ "/static/images/cake.jpg"
+                      image={book.img}
                       title={book.name}
+                      component='img'
                     />
-                    <CardActions disableSpacing>
-                      <IconButton
-                        // Select class based on state of expanded
-                        className={clsx(classes.expand, {
-                          [classes.expandOpen]: expanded[i],
-                        })}
-                        onClick={() => handleExpandClick(i)}
-                        aria-expanded={expanded[i]}
-                        aria-label="show more"
-                      >
-                        <ExpandMore />
-                      </IconButton>
-                    </CardActions>
-                    <Collapse in={expanded[i]} timeout="auto" unmountOnExit>
-                      <CardContent>
-                        <br />
-                        {book.thoughts.map((text, idx) => (
-                          <Typography>{text}</Typography>
-                        ))}
-                      </CardContent>
-                    </Collapse>
+                    
+                    <CardContent className={classes.cardContent}>
+                      {book.thoughts.map((text, idx) => (
+                        <Typography>{text}</Typography>
+                      ))}
+                    </CardContent>
                   </Card>
                 </Grid>
               ))}

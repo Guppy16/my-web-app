@@ -13,6 +13,11 @@ import {
 } from "@material-ui/core";
 import Social from "./components/SocialMediaBanner.js";
 import SimpleHeroUnit from "./components/SimpleHeroUnit.js";
+import FoodImg from "./pages/food/food.jpg"
+import MagicMirrorImg from "./pages/magicmirror/magicmirror.jpeg";
+import PrepImg from "./pages/prep/prep.jpg"
+import ProjectImg from "./pages/drone.jpg"
+import BooksImg from "./pages/books/books.jpg"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,36 +46,35 @@ const useStyles = makeStyles((theme) => ({
 
 const cards = [
   {
-    imgURL: "https://source.unsplash.com/random",
-    imgTitle: "Food for thought",
-    link: "/Food",
-    title: "Food",
-    desc: "Recipes of Disaster",
-  },
-  {
-    imgURL:
-      "https://fonts.gstatic.com/s/i/materialicons/extension/v6/24px.svg?download=true",
-    imgTitle: "Build ur imagination",
-    link: "https://github.com/Guppy16/rpi-access-point-no-bridge",
-    title: "Projects",
-    desc: "Cool things to do in life",
-  },
-  {
-    imgURL: "https://source.unsplash.com/random",
-    imgTitle: "https://source.unsplash.com/random",
-    link: "https://source.unsplash.com/random",
-    title: "Prep",
-    desc: "Problem solving questions",
-  },
-  {
-    imgURL: "https://source.unsplash.com/random",
+    imgURL: BooksImg,
     imgTitle: "https://source.unsplash.com/random",
     link: "/Books",
     title: "Books",
     desc: "The very few list of books I've completed",
   },
   {
-    imgURL: "https://source.unsplash.com/random",
+    imgURL: ProjectImg,
+    imgTitle: "Build ur imagination",
+    link: "https://github.com/Guppy16/hello-world",
+    title: "Projects",
+    desc: "Cool things to do in life",
+  },
+  {
+    imgURL: FoodImg,
+    imgTitle: "Food for thought",
+    link: "/Food",
+    title: "Food",
+    desc: "Recipes of Disaster",
+  },
+  {
+    imgURL: PrepImg,
+    imgTitle: "https://source.unsplash.com/random",
+    link: "https://source.unsplash.com/random",
+    title: "Prep",
+    desc: "Problem solving questions",
+  },
+  {
+    imgURL: MagicMirrorImg,
     imgTitle: "Mirror Magic",
     link: "/MagicMirror",
     title: "Magic Mirror",

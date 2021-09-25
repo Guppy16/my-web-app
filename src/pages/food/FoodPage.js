@@ -89,7 +89,7 @@ export default function FoodPage() {
         <main className={classes.root}>
           <SimpleHeroUnit
             title="Recipes of Disaster"
-            subtitle="Insert some anime cooking reference"
+            subtitle="I'm a terrible cook and I hate scrolling through ad filled sites. Hence this..."
           />
           <Container className={classes.cardGrid} maxWidth="md">
             <Grid container spacing={4}>

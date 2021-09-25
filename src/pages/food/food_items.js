@@ -2,7 +2,7 @@ const food_items = [
   {
     name: "Chocolate Coffee Cake",
     type: "cake",
-    date: "17/03/2021",
+    date: "Mar 2021",
     link: "https://cafedelites.com/best-fudgy-chocolate-cake/#wprm-recipe-container-40194", // Change this to url of website
     img: "/Food", // Change this to url of img
     ingredients: [
@@ -70,7 +70,7 @@ const food_items = [
   {
     name: "Lemon Rice",
     type: "Leftover",
-    date: "25/03/2021",
+    date: "Mar 2021",
     link: "/Food", // Change this to url of page saying "hand me down"
     img: "/Food", // Change this to url of img
     ingredients: [

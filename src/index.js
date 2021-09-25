@@ -17,17 +17,9 @@ ReactDOM.render(
     <Router history={hist}>
       <Switch>
         <Route path="/" component={App} exact={true} />
-      </Switch>
-      <Switch>
         <Route path="/Badminton" component={FormPage} exact={true} />
-      </Switch>
-      <Switch>
         <Route path="/Food" component={FoodPage} exact={true} />
-      </Switch>
-      <Switch>
         <Route path="/Books" component={BooksPage} exact={true} />
-      </Switch>
-      <Switch>
         <Route path="/MagicMirror" component={MagicMirrorPage} exact={true} />
       </Switch>
     </Router>
